@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Bookshelf Apps</title>
+</head>
+<body>
+    <header class="head-bar">
+        <h1>Bookshelf Apps</h1>
+    </header>
+    
+    <main>
+        <section class="search-section">
+            <h2>Cari Judul Buku</h2>
+            <form id="searchBook">
+                <label for="searchBookTitle">Judul</label>
+                <input type="text" id="searchBook" placeholder="Cari...">
+                <button id="searchSubmit" type="submit">Cari</button>
+            </form>
+        </section>
+
+        <section class="input-section">
+            <h2>Masukkan Buku Baru</h2>
+            <form id="inputBook">
+                <div class="input">
+                    <label for="title">Judul Buku</label>
+                    <input id="title" type="text" placeholder="Judul Buku" required>
+                </div>
+                <div class="input">
+                    <label for="author">Penulis Buku</label>
+                    <input id="author" type="text" placeholder="Penulis Buku" required>
+                </div>
+                <div class="input">
+                    <label for="year">Tahun Terbit</label>
+                    <input id="year" type="number" placeholder="Tahun Terbit" required>
+                </div>
+                <div class="input-inline">
+                    <label for="isCompleted">Selesai Dibaca</label>
+                    <input id="isCompleted" type="checkbox">
+                </div>
+                <button id="bookSubmit" type="submit">Masukkan Buku ke Rak <b>Belum Selesai Dibaca</b></button>
+            </form>
+        </section>
+        
+        <section class="book-shelf">
+            <h2>Belum Selesai Dibaca</h2>
+            <div id="unread" class="book-list">
+                
+            </div>
+        </section>
+        <section class="book-shelf">
+            <h2>Selesai Dibaca</h2>
+            <div id="read" class="book-list">
+                
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Submission Project Kelas Membuat Front-End Web untuk Pemula - DICODING</p>
+        <p>&#169; 2022, Mohammad Faisal Ramdhani</p>
+    </footer>
+
+    <script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Changa';
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.head-bar {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 15, 97);
+    color: white;
+    border-radius: 5px;
+}
+
+main {
+    max-width: 1000px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.search-section {
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+    flex-direction: column;
+    border: 5px solid black;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.search-section form {
+    padding: 15px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto 1fr 0.5fr;
+    grid-gap: 10px;
+}
+
+.search-section form label {
+    display: flex;
+    align-items: center;
+}
+
+.search-section form input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.search-section form button {
+    background-color: rgba(0, 15, 97, 0.753);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-section form button:hover{
+    background-color: rgb(0, 15, 97);
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.input-section h2 {
+    text-align: center;
+}
+
+.input-section form input {
+    margin: 10px 0;
+}
+
+.input-section form button {
+    background-color: rgba(0, 15, 97, 0.753);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.input-section form button:hover {
+    background-color: rgb(0, 15, 97);
+}
+
+.input-section form .input input {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.input-section form .input-inline {
+    display: flex;
+    margin: 10px;
+}
+
+.input-section form .input-inline label {
+    margin-right: 10px;
+}
+
+.book-shelf {
+    padding: 15px;
+    margin: 20px 0;
+    border: 5px solid black;
+    border-radius: 10px;
+}
+
+.book-shelf h2 {
+    text-align: center;
+}
+
+.book-shelf .book-list {
+    padding: 15px;
+}
+
+.book-shelf .book-list .book-item {
+    padding: 8px 16px 16px 16px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.check-button {
+    background: url('../assets/check-solid.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('../assets/check-solid.svg');
+    background-size: contain;
+}
+
+.trash-button{
+    background: url('../assets/trash-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('../assets/trash-fill.svg');
+    background-size: contain;
+}
+
+.undo-button{
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+}
+
+.check-button:focus, .trash-button {
+    outline: none;
+}
+
+footer {
+    padding: 20px;
+    background-color: rgb(0, 15, 97);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
